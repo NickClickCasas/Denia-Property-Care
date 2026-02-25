@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denia Property Care | Key Holding, Maintenance & Airport Transfers</title>
+    <meta name="description" content="Professional key holding, property maintenance and airport transfer services in Denia, Costa Blanca, Spain. Trusted partner of Click Casas.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#0ea5e9',
+                        accent: '#f59e0b',
+                        sand: '#f5f5f4',
+                        mediterranean: '#0369a1'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="home" class="h-8 w-8 text-primary"></i>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-serif font-bold text-primary">Denia Property Care</span>
+                        <span class="text-xs text-gray-500">Key Holding & Maintenance</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                    <a href="#partners" class="text-gray-700 hover:text-primary transition-colors font-medium">Partners</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-blue-800 transition-all transform hover:scale-105 shadow-lg font-medium">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md">Home</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md">Services</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md">About</a>
+                <a href="#partners" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md">Partners</a>
+                <a href="#contact" class="block px-3 py-2 text-primary font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="http://static.photos/mediterranean/1200x630/42" alt="Denia Mediterranean coast" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/70 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-2xl text-white">
+                <div class="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/30">
+                    <i data-lucide="map-pin" class="h-4 w-4 mr-2 text-accent"></i>
+                    <span class="text-sm font-medium">Serving Denia & Costa Blanca North</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6 leading-tight">
+                    Your Property, <br>
+                    <span class="text-accent">Our Priority</span>
+                </h1>
+                
+                <p class="text-xl mb-8 text-gray-100 leading-relaxed">
+                    Professional key holding, property maintenance, and airport transfer services in Denia. 
+                    Trusted by homeowners and Click Casas real estate.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-600 transition-all transform hover:scale-105 shadow-xl text-center flex items-center justify-center gap-2">
+                        <span>Get a Quote</span>
+                        <i data-lucide="arrow-right" class="h-5 w-5"></i>
+                    </a>
+                    <a href="#services" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-all text-center">
+                        Our Services
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="mt-12 flex flex-wrap gap-6 items-center">
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                        <i data-lucide="shield-check" class="h-5 w-5 text-green-400"></i>
+                        <span class="text-sm font-medium">Fully Insured</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                        <i data-lucide="clock" class="h-5 w-5 text-accent"></i>
+                        <span class="text-sm font-medium">24/7 Availability</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                        <i data-lucide="award" class="h-5 w-5 text-yellow-400"></i>
+                        <span class="text-sm font-medium">Local Experts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="h-8 w-8 text-white/70"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">What We Offer</span>
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-4">Comprehensive Property Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    From key holding to maintenance and transfers, we provide complete peace of mind for property owners in Denia.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Key Holding -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
+                        <i data-lucide="key" class="h-20 w-20 text-white/90 relative z-10 transform group-hover:scale-110 transition-transform duration-300"></i>
+                        <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3">Key Holding</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Secure key storage and management for your property. We coordinate with guests, contractors, and real estate agents for seamless access.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Secure storage facility
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Guest check-in/check-out
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Contractor access coordination
+                            </li>
+                        </ul>
+                        <button onclick="scrollToContact('Key Holding')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Maintenance -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-teal-500 flex items-center justify-center relative overflow-hidden">
+                        <i data-lucide="wrench" class="h-20 w-20 text-white/90 relative z-10 transform group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3">Property Maintenance</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Regular inspections, cleaning coordination, pool maintenance, and emergency repairs. We keep your property in perfect condition year-round.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Regular property inspections
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Pool & garden maintenance
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Emergency repair coordination
+                            </li>
+                        </ul>
+                        <button onclick="scrollToContact('Maintenance')" class="w-full py-3 border-2 border-secondary text-secondary rounded-lg font-semibold hover:bg-secondary hover:text-white transition-colors">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Airport Transfers -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-accent to-orange-500 flex items-center justify-center relative overflow-hidden">
+                        <i data-lucide="plane" class="h-20 w-20 text-white/90 relative z-10 transform group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3">Airport Transfers</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Reliable private transfers from Alicante and Valencia airports to Denia. Professional drivers, modern vehicles, and meet & greet service.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Alicante & Valencia airports
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Modern air-conditioned vehicles
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                Meet & greet service
+                            </li>
+                        </ul>
+                        <button onclick="scrollToContact('Transfers')" class="w-full py-3 border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent hover:text-white transition-colors">
+                            Book Transfer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / About -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="http://static.photos/estate/640x360/156" alt="Modern Spanish villa with pool in Denia" class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl hidden md:block">
+                        <div class="text-4xl font-bold mb-1">10+</div>
+                        <div class="text-sm opacity-90">Years Experience</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">About Us</span>
+                    <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Local Experts You Can Trust</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Based in the heart of Denia, we specialize in providing comprehensive property services for homeowners, holiday rentals, and real estate agencies. Our local knowledge and professional network ensure your property is in safe hands.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Local Denia Knowledge</h4>
+                                <p class="text-gray-600 text-sm">Deep understanding of the Denia area and Costa Blanca North</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i data-lucide="users" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Trusted Network</h4>
+                                <p class="text-gray-600 text-sm">Connected with reliable contractors, cleaners, and service providers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i data-lucide="message-circle" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Multilingual Team</h4>
+                                <p class="text-gray-600 text-sm">English, Spanish, and German speaking staff</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-800 transition-colors shadow-lg">
+                            Get in Touch
+                        </a>
+                        <a href="tel:+34123456789" class="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-primary hover:text-primary transition-colors flex items-center gap-2">
+                            <i data-lucide="phone" class="h-5 w-5"></i>
+                            Call Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Click Casas Partnership -->
+    <section id="partners" class="py-24 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-12 flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 text-primary font-semibold mb-4">
+                            <i data-lucide="handshake" class="h-5 w-5"></i>
+                            <span>Official Partnership</span>
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Proud Partners of Click Casas</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            We are the trusted property care partner for Click Casas, one of Denia's leading real estate agencies. This partnership ensures seamless property management for their clients, from key holding to maintenance and guest services.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-700">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3"></i>
+                                Preferred vendor for Click Casas properties
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3"></i>
+                                Integrated booking and key management systems
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3"></i>
+                                Streamlined communication for property owners
+                            </li>
+                        </ul>
+                        <a href="https://www.clickcasas.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary font-semibold hover:underline">
+                            Visit Click Casas
+                            <i data-lucide="external-link" class="h-4 w-4 ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="relative h-64 md:h-auto bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                        <div class="text-center text-white p-8">
+                            <i data-lucide="home" class="h-24 w-24 mx-auto mb-4 opacity-90"></i>
+                            <div class="text-2xl font-serif font-bold mb-2">Click Casas</div>
+                            <div class="text-white/80">Real Estate Denia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Testimonials</span>
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-sand p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="h-10 w-10 text-primary/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Denia Property Care has managed our holiday home for 3 years. Their key holding service is impeccable, and the maintenance team responds quickly to any issues. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">SM</div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Sarah Mitchell</div>
+                            <div class="text-sm text-gray-500">London, UK</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-sand p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="h-10 w-10 text-primary/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The airport transfer service is fantastic. Always on time, clean cars, and friendly drivers. They make arriving in Denia stress-free every time."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold">HK</div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Hans Keller</div>
+                            <div class="text-sm text-gray-500">Munich, Germany</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-sand p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="h-10 w-10 text-primary/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"As a Click Casas client, having Denia Property Care as our property manager gives us complete peace of mind. Professional, reliable, and always available."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold">JD</div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Jean Dupont</div>
+                            <div class="text-sm text-gray-500">Paris, France</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gradient-to-b from-sand to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">Contact Us</span>
+                    <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Let's Discuss Your Property Needs</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Whether you need key holding, maintenance, or airport transfers, we're here to help. Reach out for a free consultation and quote.
+                    </p>
+
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Address</div>
+                                <div class="text-gray-600">Calle Marqués de Campo, 37, 03700 Denia, Alicante</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="phone" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Phone</div>
+                                <div class="text-gray-600">+34 123 456 789</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="mail" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Email</div>
+                                <div class="text-gray-600">info@deniapropertycare.com</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="clock" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Working Hours</div>
+                                <div class="text-gray-600">Mon - Fri: 9:00 - 18:00 | 24/7 Emergency</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/34123456789" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors shadow-lg">
+                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="Smith">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="+34 123 456 789">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Service Interested In</label>
+                            <select id="service-select" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all">
+                                <option value="">Select a service...</option>
+                                <option value="Key Holding">Key Holding</option>
+                                <option value="Property Maintenance">Property Maintenance</option>
+                                <option value="Airport Transfers">Airport Transfers</option>
+                                <option value="Full Property Management">Full Property Management</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" placeholder="Tell us about your property and requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-blue-800 transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="h-5 w-5"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="success-message" class="hidden text-center py-12">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check" class="h-8 w-8 text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">Message Sent!</h3>
+                        <p class="text-gray-600">We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 bg-gray-200 relative">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24944.438806642277!2d0.102865!3d38.8407775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129df9cbbf4d7e51%3A0x403d60b6bf5e2430!2sDenia%2C%20Alicante%2C%20Spain!5e0!3m2!1sen!2sus!4v1635959567400!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            class="absolute inset-0">
+        </iframe>
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg max-w-sm">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary p-2 rounded-full">
+                    <i data-lucide="map-pin" class="h-5 w-5 text-white"></i>
+                </div>
+                <div>
+                    <div class="font-semibold text-gray-900">Our Office</div>
+                    <div class="text-sm text-gray-600">Calle Marqués de Campo, Denia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="home" class="h-8 w-8 text-secondary"></i>
+                        <span class="text-2xl font-serif font-bold">Denia Property Care</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-md">
+                        Professional property management services in Denia and Costa Blanca North. Key holding, maintenance, and airport transfers for homeowners and real estate agents.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#partners" class="hover:text-white transition-colors">Partners</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Key Holding</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Maintenance</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Airport Transfers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Property Inspections</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">&copy; 2024 Denia Property Care. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/34123456789" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 z-50 group">
+        <i data-lucide="message-circle" class="h-7 w-7"></i>
+        <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+            Chat with us
+        </span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+</body>
+</html>
