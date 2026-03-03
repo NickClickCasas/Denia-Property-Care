@@ -14,4 +14,4 @@ jobs:
         run: |
           git clone https://github.com repo
           cd repo
-          git push --force https://nickClickCasas:$HF_TOKEN@huggingface.co/spaces/nickClickCasas/deepsite-project-rzbtu main
+         run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/NickClickCasas/Denia-Property-Care.git main
