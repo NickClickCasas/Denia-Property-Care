@@ -1,5 +1,5 @@
 yaml
-name: Sync
+name:Sync
 on: [push, workflow_dispatch]
 
 jobs:
