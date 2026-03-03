@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://nickClickCasas:$HF_TOKEN@https://huggingface.co/spaces/nickClickCasas/deepsite-project-rzbtu main
+        run: git push --force https://nickClickCasas:$HF_TOKEN@huggingface.co/spaces/nickClickCasas/deepsite-project-rzbtu main
