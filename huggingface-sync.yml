@@ -14,3 +14,4 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/Denia-Property-Care main
+
