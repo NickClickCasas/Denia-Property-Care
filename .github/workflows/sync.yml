@@ -11,6 +11,4 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/NickClickCasas/Denia-Property-Care main
-
+run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/NickClickCasas/Denia-Property-Care main
