@@ -1,4 +1,3 @@
-yaml
 name: Sync
 on: [push, workflow_dispatch]
 
@@ -13,4 +12,5 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://nickClickCasas:$HF_TOKEN@huggingface.co/spaces/nickClickCasas/deepsite-project-rzbtu main
+        run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/NickClickCasas/Denia-Property-Care main
+
