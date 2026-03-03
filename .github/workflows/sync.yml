@@ -1,14 +1,15 @@
+yaml
 name: Sync
 on: [push, workflow_dispatch]
 
 jobs:
-  sync-to-hub:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          lfs: true
-      - name: Push to hub
+      - name: Push to Hugging Face
         env:
-run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/NickClickCasas/Denia-Property-Care main
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: git push --force https://NickClickCasas:$HF_TOKEN@huggingface.co/spaces/NickClickCasas/Denia-Property-Care main
