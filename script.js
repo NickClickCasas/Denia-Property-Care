@@ -166,7 +166,7 @@ function scrollToContact(serviceName) {
 
 // WhatsApp Link Generator
 function openWhatsApp(message = '') {
-    const phone = '34123456789';
+    const phone = '34711089008';
     const baseUrl = 'https://wa.me/';
     const encodedMessage = encodeURIComponent(message);
     const url = `${baseUrl}${phone}${encodedMessage ? '?text=' + encodedMessage : ''}`;
