@@ -65,37 +65,46 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact Form Handling
+    // Contact Form Handling - FormSubmit.co
     const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnIcon = document.getElementById('btn-icon');
+    const btnSpinner = document.getElementById('btn-spinner');
     const successMessage = document.getElementById('success-message');
+    const formReturnUrl = document.getElementById('form-return-url');
+
+    // Set the return URL dynamically to return to this page with success parameter
+    if (formReturnUrl) {
+        const currentUrl = window.location.href.split('?')[0]; // Remove any existing query params
+        formReturnUrl.value = currentUrl + '?form=submitted#contact';
+    }
+
+    // Check if form was just submitted (returned from FormSubmit)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('form') === 'submitted') {
+        // Hide form and show success message
+        if (contactForm) contactForm.style.display = 'none';
+        if (successMessage) {
+            successMessage.classList.remove('hidden');
+            successMessage.classList.add('fade-in');
+        }
+        // Clear the URL parameter after showing success
+        if (history.replaceState) {
+            history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+        }
+    }
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            // Show loading state before submission (form will navigate away)
+            if (submitBtn) submitBtn.disabled = true;
+            if (btnText) btnText.textContent = 'Sending...';
+            if (btnIcon) btnIcon.classList.add('hidden');
+            if (btnSpinner) btnSpinner.classList.remove('hidden');
             
-            // Simulate form submission
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            // Show loading state
-            submitBtn.innerHTML = '<div class="spinner"></div>';
-            submitBtn.disabled = true;
-
-            // Simulate API call
-            setTimeout(() => {
-                contactForm.style.display = 'none';
-                successMessage.classList.remove('hidden');
-                successMessage.classList.add('fade-in');
-                
-                // Reset form after 3 seconds (optional)
-                setTimeout(() => {
-                    contactForm.reset();
-                    contactForm.style.display = 'block';
-                    successMessage.classList.add('hidden');
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                }, 3000);
-            }, 1500);
+            // Form will submit normally to FormSubmit.co, then redirect back
+            // No e.preventDefault() - let the form submit naturally
         });
     }
 
