@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denia Property Care | Key Holding, Maintenance & Airport Transfers</title>
+    <title>Denia Property Care | Key Holding, Maintenance &amp; Airport Transfers</title>
     <meta name="description" content="Professional key holding, property maintenance and airport transfer services in Denia, Costa Blanca, Spain. Trusted partner of Click Casas.">
-    
-    <!-- Tailwind CSS -->
+    <link rel="canonical" href="https://www.deniapropertycare.com/">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -40,21 +34,19 @@
 </head>
 <body class="font-sans text-gray-800 bg-white">
 
-    <!-- Navigation -->
+    <!-- ============ NAVIGATION ============ -->
     <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-2">
                     <i data-lucide="home" class="h-8 w-8 text-primary"></i>
                     <div class="flex flex-col">
                         <span class="text-2xl font-serif font-bold text-primary">Denia Property Care</span>
-                        <span class="text-xs text-gray-500">Key Holding & Maintenance</span>
+                        <span class="text-xs text-gray-500">Key Holding &amp; Maintenance</span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
                     <a href="#services" class="text-gray-700 hover:text-primary transition-colors font-medium">Services</a>
                     <a href="#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
@@ -65,14 +57,12 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn">
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn" aria-label="Open menu">
                     <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md">Home</a>
@@ -85,11 +75,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ============ HERO ============ -->
     <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="http://static.photos/estate/1200x630/villa-denia" alt="Luxury Villa in Denia" class="w-full h-full object-cover" id="hero-image">
+        <!-- Gradient shows if no image is available, so the hero never looks broken -->
+        <div class="absolute inset-0 z-0 bg-gradient-to-br from-primary via-[#351c37] to-mediterranean">
+            <img src="images/hero-denia.jpg" alt="Villa with pool in Denia, Costa Blanca" class="w-full h-full object-cover"
+                 onerror="this.style.display='none';">
             <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-[#351c37]/80 to-transparent"></div>
         </div>
 
@@ -97,19 +88,19 @@
             <div class="max-w-2xl text-white">
                 <div class="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/30">
                     <i data-lucide="map-pin" class="h-4 w-4 mr-2 text-accent"></i>
-                    <span class="text-sm font-medium">Serving Denia & Costa Blanca North</span>
+                    <span class="text-sm font-medium">Serving Denia &amp; Costa Blanca North</span>
                 </div>
-                
+
                 <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6 leading-tight">
                     Your Property, <br>
                     <span class="text-accent">Our Priority</span>
                 </h1>
-                
+
                 <p class="text-xl mb-8 text-gray-100 leading-relaxed">
-                    Professional key holding, property maintenance, and airport transfer services in Denia. 
+                    Professional key holding, property maintenance, and airport transfer services in Denia.
                     Trusted by homeowners and Click Casas real estate.
                 </p>
-                
+
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-[#351c37] transition-all transform hover:scale-105 shadow-xl text-center flex items-center justify-center gap-2">
                         <span>Get a Quote</span>
@@ -120,8 +111,7 @@
                     </a>
                 </div>
 
-                <!-- Trust Badges -->
-                <div class="mt-12 flex flex-wrap gap-6 items-center">
+                <div class="mt-12 flex flex-wrap gap-4 items-center">
                     <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
                         <i data-lucide="shield-check" class="h-5 w-5 text-green-400"></i>
                         <span class="text-sm font-medium">Fully Insured</span>
@@ -138,13 +128,12 @@
             </div>
         </div>
 
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <i data-lucide="chevron-down" class="h-8 w-8 text-white/70"></i>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- ============ SERVICES ============ -->
     <section id="services" class="py-24 bg-sand">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -157,91 +146,90 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Key Holding -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
                         <i data-lucide="key" class="h-20 w-20 text-white/90 relative z-10 transform group-hover:scale-110 transition-transform duration-300"></i>
-                        <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3">Key Holding</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             Secure key storage and management for your property. We coordinate with guests, contractors, and real estate agents for seamless access.
                         </p>
                         <ul class="space-y-3 mb-6">
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Secure storage facility
                             </li>
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
-                                Guest check-in/check-out
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                                Guest check-in / check-out
                             </li>
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Contractor access coordination
                             </li>
                         </ul>
-                        <button onclick="scrollToContact('Key Holding')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        <button onclick="scrollToContact('Key Holding')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors mt-auto">
                             Enquire Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Property Maintenance -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="h-48 bg-gradient-to-br from-secondary to-teal-500 flex items-center justify-center relative overflow-hidden">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-mediterranean flex items-center justify-center relative overflow-hidden">
                         <i data-lucide="wrench" class="h-20 w-20 text-white/90 relative z-10 transform group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3">Property Maintenance</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             Regular inspections, cleaning coordination, pool maintenance, and emergency repairs. We keep your property in perfect condition year-round.
                         </p>
                         <ul class="space-y-3 mb-6">
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Routine inspections
                             </li>
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
-                                Cleaning & pool coordination
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                                Cleaning &amp; pool coordination
                             </li>
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Emergency repair response
                             </li>
                         </ul>
-                        <button onclick="scrollToContact('Property Maintenance')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        <button onclick="scrollToContact('Property Maintenance')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors mt-auto">
                             Enquire Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Airport Transfers -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-accent to-orange-500 flex items-center justify-center relative overflow-hidden">
                         <i data-lucide="plane" class="h-20 w-20 text-white/90 relative z-10 transform group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3">Airport Transfers</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             Reliable, punctual transfers to and from Alicante Airport for guests, owners, and holidaymakers arriving in Denia.
                         </p>
                         <ul class="space-y-3 mb-6">
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Private and shared transfers
                             </li>
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Flight monitoring
                             </li>
                             <li class="flex items-center text-sm text-gray-600">
-                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2 flex-shrink-0"></i>
+                                <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
                                 Friendly local drivers
                             </li>
                         </ul>
-                        <button onclick="scrollToContact('Airport Transfers')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        <button onclick="scrollToContact('Airport Transfers')" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors mt-auto">
                             Enquire Now
                         </button>
                     </div>
@@ -250,153 +238,480 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ============ ABOUT ============ -->
     <section id="about" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">About Us</span>
-                    <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Trusted local care for your home in Denia</h2>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        Denia Property Care offers a premium property support service for homeowners, landlords, and holiday rental owners across Denia and the Costa Blanca North.
-                    </p>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                        We combine practical local knowledge with reliable, hands-on service to make property ownership stress-free.
-                    </p>
-
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div class="bg-sand p-6 rounded-xl">
-                            <div class="flex items-center gap-3 mb-3">
-                                <i data-lucide="shield" class="h-6 w-6 text-primary"></i>
-                                <h3 class="font-bold text-gray-900">Reliable</h3>
-                            </div>
-                            <p class="text-gray-600">Professional service you can count on.</p>
-                        </div>
-                        <div class="bg-sand p-6 rounded-xl">
-                            <div class="flex items-center gap-3 mb-3">
-                                <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
-                                <h3 class="font-bold text-gray-900">Local</h3>
-                            </div>
-                            <p class="text-gray-600">Based in Denia and serving the local area.</p>
-                        </div>
+                <div class="relative">
+                    <img src="images/denia-villa.jpg" alt="Property in Denia, Costa Blanca" class="rounded-2xl shadow-2xl w-full object-cover h-[500px] bg-sand"
+                         onerror="this.style.display='none';">
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl hidden md:block">
+                        <div class="text-4xl font-bold mb-1">10+</div>
+                        <div class="text-sm opacity-90">Years Experience</div>
                     </div>
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Property care in Denia" class="w-full h-[600px] object-cover">
+                <div>
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">About Us</span>
+                    <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Trusted local care for your home in Denia</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Denia Property Care offers a premium property support service for homeowners, landlords, and holiday rental owners across Denia and the Costa Blanca North.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        We combine practical local knowledge with reliable, hands-on service to make property ownership stress-free.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i data-lucide="shield-check" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Reliable</h4>
+                                <p class="text-gray-600 text-sm">Professional service you can count on.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Local</h4>
+                                <p class="text-gray-600 text-sm">Based in Denia and serving the local area.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i data-lucide="message-circle" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Multilingual</h4>
+                                <p class="text-gray-600 text-sm">English, Spanish and German speaking team.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="absolute -bottom-8 -left-8 bg-primary text-white p-6 rounded-2xl shadow-xl">
-                        <p class="text-3xl font-bold">24/7</p>
-                        <p class="text-sm opacity-90">Property support</p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-[#351c37] transition-colors shadow-lg">
+                            Get in Touch
+                        </a>
+                        <a href="tel:+34711089008" class="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-primary hover:text-primary transition-colors flex items-center gap-2">
+                            <i data-lucide="phone" class="h-5 w-5"></i>
+                            Call Us
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Partners Section -->
+    <!-- ============ PARTNERS ============ -->
     <section id="partners" class="py-24 bg-sand">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+
+            <!-- Click Casas partnership -->
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden mb-16">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-12 flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 text-primary font-semibold mb-4">
+                            <i data-lucide="handshake" class="h-5 w-5"></i>
+                            <span>Official Partnership</span>
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Proud Partners of Click Casas</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            We are the trusted property care partner for Click Casas, one of Denia's leading real estate agencies. This partnership ensures seamless property management for their clients, from key holding to maintenance and guest services.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-700">
+                                <svg class="h-5 w-5 text-green-500 mr-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                                Preferred partner for Click Casas
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <svg class="h-5 w-5 text-green-500 mr-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                                Integrated booking and key management systems
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <svg class="h-5 w-5 text-green-500 mr-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                                Streamlined communication for property owners
+                            </li>
+                        </ul>
+                        <a href="https://www.click-casas.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary font-semibold hover:underline">
+                            Visit Click Casas
+                            <i data-lucide="external-link" class="h-4 w-4 ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="relative h-64 md:h-auto bg-sand flex items-center justify-center p-8">
+                        <img src="images/download clickcasas.jfif" alt="Click Casas logo" class="max-h-full max-w-full object-contain rounded-lg shadow-lg"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display:none;" class="flex-col items-center justify-center text-center p-4">
+                            <i data-lucide="home" class="h-16 w-16 text-primary mb-2"></i>
+                            <span class="text-2xl font-serif font-bold text-primary">Click Casas</span>
+                            <span class="text-sm text-gray-500">Everything Clicks Into Place</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trusted by local professionals -->
+            <div class="text-center mb-12">
                 <span class="text-primary font-semibold tracking-wider uppercase text-sm">Our Partners</span>
-                <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-4">Trusted by local professionals</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                <h2 class="text-3xl font-serif font-bold text-gray-900 mt-2 mb-4">Trusted by local professionals</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
                     We work closely with property owners, real estate professionals, and local service providers to keep homes in excellent condition.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <i data-lucide="building" class="h-12 w-12 text-primary mx-auto mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Property Owners</h3>
-                    <p class="text-gray-600">Peace of mind for empty or holiday homes.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="home" class="h-7 w-7 text-primary"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Property Owners</h3>
+                    <p class="text-gray-600 text-sm">Peace of mind for empty or holiday homes.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <i data-lucide="briefcase" class="h-12 w-12 text-primary mx-auto mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Estate Agents</h3>
-                    <p class="text-gray-600">Smooth coordination for viewings and access.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="key" class="h-7 w-7 text-primary"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Estate Agents</h3>
+                    <p class="text-gray-600 text-sm">Smooth coordination for viewings and access.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <i data-lucide="users" class="h-12 w-12 text-primary mx-auto mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Holiday Guests</h3>
-                    <p class="text-gray-600">A welcoming and well-managed stay from arrival to departure.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="plane" class="h-7 w-7 text-primary"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Holiday Guests</h3>
+                    <p class="text-gray-600 text-sm">A welcoming and well-managed stay from arrival to departure.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-primary text-white">
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-accent font-semibold tracking-wider uppercase text-sm">Contact</span>
-                    <h2 class="text-4xl font-serif font-bold mt-2 mb-6">Let’s look after your property</h2>
-                    <p class="text-gray-200 text-lg leading-relaxed mb-8">
-                        Need support for your villa, apartment, or holiday home in Denia? Get in touch to discuss your key holding, maintenance, or transfer requirements.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="mail" class="h-5 w-5 text-accent"></i>
-                            <span>hello@deniapropertycare.com</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="phone" class="h-5 w-5 text-accent"></i>
-                            <span>+34 600 000 000</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="map-pin" class="h-5 w-5 text-accent"></i>
-                            <span>Denia, Costa Blanca, Spain</span>
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Testimonials</span>
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-sand p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="h-10 w-10 text-primary/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Denia Property Care has managed our holiday home for 3 years. Their key holding service is impeccable, and the maintenance team responds quickly to any issues. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">SM</div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Sarah Mitchell</div>
+                            <div class="text-sm text-gray-500">London, UK</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-3xl p-8 shadow-2xl">
-                    <form id="contact-form" class="space-y-5">
+                <div class="bg-sand p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="h-10 w-10 text-primary/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The airport transfer service is fantastic. Always on time, clean cars, and friendly drivers. They make arriving in Denia stress-free every time."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold">HK</div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-200 mb-2">Name</label>
-                            <input type="text" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-gray-300 focus:outline-none focus:border-accent" placeholder="Your name">
+                            <div class="font-semibold text-gray-900">Hans Keller</div>
+                            <div class="text-sm text-gray-500">Munich, Germany</div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="bg-sand p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="h-10 w-10 text-primary/20 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-accent fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"As a Click Casas client, having Denia Property Care as our property manager gives us complete peace of mind. Professional, reliable, and always available."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold">JD</div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-200 mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-gray-300 focus:outline-none focus:border-accent" placeholder="Your email">
+                            <div class="font-semibold text-gray-900">Jean Dupont</div>
+                            <div class="text-sm text-gray-500">Paris, France</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ BLOG TEASER ============ -->
+    <section id="blog-teaser" class="py-24 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Property Care Journal</span>
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Advice for Owners in Denia</h2>
+                <p class="text-gray-600 text-lg">
+                    Practical guidance from looking after homes here for over ten years — pools, damp, keys, guests, and the small jobs that stop becoming big ones.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <a href="closing-up-your-denia-property-for-winter.html" class="hover-card block bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-md">Owner Guides</span>
+                        <span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-md">Maintenance</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3 leading-snug">Closing up your Denia property for winter</h3>
+                    <p class="text-gray-600 text-sm mb-6">The jobs worth doing before you fly home — from direct debits and damp to the insurance clause most owners have never read.</p>
+                    <span class="text-primary font-semibold text-sm inline-flex items-center gap-2">Read article <i data-lucide="arrow-right" class="h-4 w-4"></i></span>
+                </a>
+
+                <a href="alicante-or-valencia-airport-denia.html" class="hover-card block bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-md">Transfers</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3 leading-snug">Alicante or Valencia? Choosing your airport for Denia</h3>
+                    <p class="text-gray-600 text-sm mb-6">Both work. Here's the road distance and the realistic transfer time to each, so you can compare against the flight you're actually booking.</p>
+                    <span class="text-primary font-semibold text-sm inline-flex items-center gap-2">Read article <i data-lucide="arrow-right" class="h-4 w-4"></i></span>
+                </a>
+
+                <a href="empty-property-risks-denia.html" class="hover-card block bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-md">Owner Guides</span>
+                        <span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-md">Maintenance</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3 leading-snug">Your property is empty eight months a year</h3>
+                    <p class="text-gray-600 text-sm mb-6">Empty homes are the profile insurers and communities worry about most. The fix is mostly paperwork and routine, not expense.</p>
+                    <span class="text-primary font-semibold text-sm inline-flex items-center gap-2">Read article <i data-lucide="arrow-right" class="h-4 w-4"></i></span>
+                </a>
+            </div>
+
+            <div class="text-center">
+                <a href="blog.html" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-[#351c37] transition-all transform hover:scale-105 shadow-lg">
+                    <span>Read all articles</span>
+                    <i data-lucide="arrow-right" class="h-5 w-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="py-24 bg-gradient-to-b from-sand to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-primary font-semibold tracking-wider uppercase text-sm">Contact</span>
+                    <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Let's look after your property</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Need support for your villa, apartment, or holiday home in Denia? Get in touch to discuss your key holding, maintenance, or transfer requirements.
+                    </p>
+
+                    <div class="space-y-5 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="mail" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Email</div>
+                                <a href="mailto:info@deniapropertycare.com" class="text-gray-600 hover:text-primary">info@deniapropertycare.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="phone" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Phone</div>
+                                <a href="tel:+34711089008" class="text-gray-600 hover:text-primary">711 089 008</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Area</div>
+                                <div class="text-gray-600">Denia &amp; Costa Blanca North, Spain</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i data-lucide="clock" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Hours</div>
+                                <div class="text-gray-600">Mon–Fri 9:00–18:00 &middot; 24/7 emergency</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/34711089008" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors shadow-lg">
+                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        Chat on WhatsApp
+                    </a>
+
+                    <!-- SOCIAL ICONS — inline SVG because Lucide v1 removed brand icons -->
+                    <div class="flex flex-wrap items-center gap-3 mt-6">
+                        <span class="text-sm text-gray-500 font-medium mr-1">Follow us</span>
+                        <a href="https://www.facebook.com/profile.php?id=61594640412435" target="_blank" rel="noopener noreferrer" aria-label="Denia Property Care on Facebook" class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2.5 rounded-full font-medium hover:bg-primary hover:text-white transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/deniapropertycare" target="_blank" rel="noopener noreferrer" aria-label="Denia Property Care on Instagram" class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2.5 rounded-full font-medium hover:bg-primary hover:text-white transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <form id="contact-form" action="https://formsubmit.co/nick@click-casas.com" method="POST" class="space-y-6">
+                        <input type="hidden" name="_subject" value="New inquiry from Denia Property Care website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" id="form-return-url" value="">
+                        <input type="text" name="_honey" style="display:none">
+
                         <div>
-                            <label class="block text-sm font-medium text-gray-200 mb-2">Service Needed</label>
-                            <select class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-accent">
-                                <option class="text-gray-900">Key Holding</option>
-                                <option class="text-gray-900">Property Maintenance</option>
-                                <option class="text-gray-900">Airport Transfers</option>
-                                <option class="text-gray-900">General Enquiry</option>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" for="cf-name">Name</label>
+                            <input id="cf-name" type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="John Smith">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" for="cf-email">Email</label>
+                            <input id="cf-email" type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" for="service-select">Service Needed</label>
+                            <select id="service-select" name="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all">
+                                <option value="">Select a service...</option>
+                                <option value="Key Holding">Key Holding</option>
+                                <option value="Property Maintenance">Property Maintenance</option>
+                                <option value="Airport Transfers">Airport Transfers</option>
+                                <option value="General Enquiry">General Enquiry</option>
                             </select>
                         </div>
+
                         <div>
-                            <label class="block text-sm font-medium text-gray-200 mb-2">Message</label>
-                            <textarea rows="4" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-gray-300 focus:outline-none focus:border-accent" placeholder="Tell us about your property and requirements"></textarea>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" placeholder="Tell us about your property and requirements..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-accent text-primary font-bold py-3.5 rounded-xl hover:bg-yellow-400 transition-colors">
-                            Send Enquiry
+
+                        <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-[#351c37] transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
+                            <span id="btn-text">Send Enquiry</span>
+                            <i data-lucide="send" class="h-5 w-5" id="btn-icon"></i>
                         </button>
+
+                        <p class="text-xs text-gray-500">
+                            We'll only use your details to answer your enquiry. See our <a href="privacy.html" class="text-primary underline">Privacy Policy</a>.
+                        </p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2025 Denia Property Care. All rights reserved.</p>
-            <div class="flex gap-6">
-                <a href="#home" class="hover:text-white">Home</a>
-                <a href="#services" class="hover:text-white">Services</a>
-                <a href="blog.html" class="hover:text-white">Blog</a>
-                <a href="#contact" class="hover:text-white">Contact</a>
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="home" class="h-8 w-8 text-secondary"></i>
+                        <span class="text-2xl font-serif font-bold">Denia Property Care</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-md">
+                        Professional property management services in Denia and Costa Blanca North. Key holding, maintenance, and airport transfers for homeowners and real estate agents.
+                    </p>
+
+                    <!-- SOCIAL ICONS — inline SVG because Lucide v1 removed brand icons -->
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/profile.php?id=61594640412435" target="_blank" rel="noopener noreferrer" aria-label="Denia Property Care on Facebook" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/deniapropertycare" target="_blank" rel="noopener noreferrer" aria-label="Denia Property Care on Instagram" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#partners" class="hover:text-white transition-colors">Partners</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Get in Touch</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="tel:+34711089008" class="hover:text-white transition-colors">711 089 008</a></li>
+                        <li><a href="mailto:info@deniapropertycare.com" class="hover:text-white transition-colors">info@deniapropertycare.com</a></li>
+                        <li>Denia &amp; Costa Blanca North</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">&copy; 2026 Denia Property Care. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white transition-colors">Terms of Use</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/34711089008" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 z-50 group">
+        <i data-lucide="message-circle" class="h-7 w-7"></i>
+        <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+            Chat with us
+        </span>
+    </a>
+
     <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Pre-select a service then scroll to the contact form
+        function scrollToContact(service) {
+            var select = document.getElementById('service-select');
+            if (select && service) {
+                for (var i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value === service) { select.selectedIndex = i; break; }
+                }
+            }
+            var contact = document.getElementById('contact');
+            if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mobile menu toggle
+        var menuBtn = document.getElementById('mobile-menu-btn');
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 </html>
