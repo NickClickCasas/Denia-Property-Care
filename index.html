@@ -7,9 +7,16 @@
     <meta name="description" content="Professional key holding, property maintenance and airport transfer services in Denia, Costa Blanca, Spain. Trusted partner of Click Casas.">
     <link rel="canonical" href="https://www.deniapropertycare.com/">
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 
     <script>
@@ -46,6 +53,7 @@
                     </div>
                 </a>
 
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
                     <a href="#services" class="text-gray-700 hover:text-primary transition-colors font-medium">Services</a>
@@ -57,12 +65,14 @@
                     </a>
                 </div>
 
+                <!-- Mobile Menu Button -->
                 <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn" aria-label="Open menu">
                     <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
                 </button>
             </div>
         </div>
 
+        <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md">Home</a>
@@ -77,10 +87,14 @@
 
     <!-- ============ HERO ============ -->
     <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <!-- Gradient shows if no image is available, so the hero never looks broken -->
+
+        <!-- Background: plum gradient sits behind, so the hero is never blank -->
         <div class="absolute inset-0 z-0 bg-gradient-to-br from-primary via-[#351c37] to-mediterranean">
-            <img src="images/hero-denia.jpg" alt="Villa with pool in Denia, Costa Blanca" class="w-full h-full object-cover"
-                 onerror="this.style.display='none';">
+            <img src="images/villa-hero.jpg"
+                 alt="Villa with an infinity pool overlooking the mountains near Denia at sunset"
+                 class="w-full h-full object-cover"
+                 onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='https://static.photos/estate/1200x630/villa-denia';}else{this.style.display='none';}">
+            <!-- Dark plum overlay: strong on the left where the text sits, clear on the right -->
             <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-[#351c37]/80 to-transparent"></div>
         </div>
 
@@ -111,6 +125,7 @@
                     </a>
                 </div>
 
+                <!-- Trust Badges -->
                 <div class="mt-12 flex flex-wrap gap-4 items-center">
                     <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
                         <i data-lucide="shield-check" class="h-5 w-5 text-green-400"></i>
@@ -145,6 +160,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
+
                 <!-- Key Holding -->
                 <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
@@ -243,7 +259,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative">
-                    <img src="images/denia-villa.jpg" alt="Property in Denia, Costa Blanca" class="rounded-2xl shadow-2xl w-full object-cover h-[500px] bg-sand"
+                    <img src="https://static.photos/estate/640x360/denia-pool"
+                         alt="Spanish villa with pool in Denia, Costa Blanca"
+                         class="rounded-2xl shadow-2xl w-full object-cover h-[500px] bg-sand"
                          onerror="this.style.display='none';">
                     <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl hidden md:block">
                         <div class="text-4xl font-bold mb-1">10+</div>
@@ -309,7 +327,7 @@
     <section id="partners" class="py-24 bg-sand">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <!-- Click Casas partnership -->
+            <!-- Click Casas Partnership -->
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden mb-16">
                 <div class="grid md:grid-cols-2">
                     <div class="p-12 flex flex-col justify-center">
@@ -341,7 +359,9 @@
                         </a>
                     </div>
                     <div class="relative h-64 md:h-auto bg-sand flex items-center justify-center p-8">
-                        <img src="images/download clickcasas.jfif" alt="Click Casas logo" class="max-h-full max-w-full object-contain rounded-lg shadow-lg"
+                        <img src="https://huggingface.co/spaces/nickClickCasas/deepsite-project-rzbtu/resolve/main/images/download%20clickcasas.jfif"
+                             alt="Click Casas logo"
+                             class="max-h-full max-w-full object-contain rounded-lg shadow-lg"
                              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div style="display:none;" class="flex-col items-center justify-center text-center p-4">
                             <i data-lucide="home" class="h-16 w-16 text-primary mb-2"></i>
@@ -468,6 +488,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-12">
+
                 <a href="closing-up-your-denia-property-for-winter.html" class="hover-card block bg-white p-8 rounded-2xl shadow-lg">
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-md">Owner Guides</span>
@@ -511,6 +532,8 @@
     <section id="contact" class="py-24 bg-gradient-to-b from-sand to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16">
+
+                <!-- Contact Info -->
                 <div>
                     <span class="text-primary font-semibold tracking-wider uppercase text-sm">Contact</span>
                     <h2 class="text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Let's look after your property</h2>
@@ -534,7 +557,7 @@
                             </div>
                             <div>
                                 <div class="font-semibold text-gray-900">Phone</div>
-                                <a href="tel:+34711089008" class="text-gray-600 hover:text-primary">711 089 008</a>
+                                <a href="tel:+34711089008" class="text-gray-600 hover:text-primary">+34 711 089 008</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
@@ -562,7 +585,7 @@
                         Chat on WhatsApp
                     </a>
 
-                    <!-- SOCIAL ICONS — inline SVG because Lucide v1 removed brand icons -->
+                    <!-- Social links — inline SVG, because Lucide v1 removed all brand icons -->
                     <div class="flex flex-wrap items-center gap-3 mt-6">
                         <span class="text-sm text-gray-500 font-medium mr-1">Follow us</span>
                         <a href="https://www.facebook.com/profile.php?id=61594640412435" target="_blank" rel="noopener noreferrer" aria-label="Denia Property Care on Facebook" class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2.5 rounded-full font-medium hover:bg-primary hover:text-white transition-colors">
@@ -576,7 +599,7 @@
                     </div>
                 </div>
 
-                <!-- Contact form -->
+                <!-- Contact Form -->
                 <div class="bg-white p-8 rounded-2xl shadow-xl">
                     <form id="contact-form" action="https://formsubmit.co/nick@click-casas.com" method="POST" class="space-y-6">
                         <input type="hidden" name="_subject" value="New inquiry from Denia Property Care website">
@@ -614,12 +637,48 @@
                         <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-[#351c37] transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
                             <span id="btn-text">Send Enquiry</span>
                             <i data-lucide="send" class="h-5 w-5" id="btn-icon"></i>
+                            <div id="btn-spinner" class="spinner hidden" style="width:20px;height:20px;border-width:2px;"></div>
                         </button>
 
                         <p class="text-xs text-gray-500">
                             We'll only use your details to answer your enquiry. See our <a href="privacy.html" class="text-primary underline">Privacy Policy</a>.
                         </p>
                     </form>
+
+                    <!-- Success message — revealed by script.js after FormSubmit redirects back -->
+                    <div id="success-message" class="hidden text-center py-12">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check" class="h-8 w-8 text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">Message Sent!</h3>
+                        <p class="text-gray-600">We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAP ============ -->
+    <section class="h-96 bg-gray-200 relative">
+        <iframe
+            src="https://www.google.com/maps?q=Denia,+Alicante,+Spain&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map of Denia, Costa Blanca"
+            class="absolute inset-0">
+        </iframe>
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg max-w-sm">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary p-2 rounded-full">
+                    <i data-lucide="map-pin" class="h-5 w-5 text-white"></i>
+                </div>
+                <div>
+                    <div class="font-semibold text-gray-900">Our Area</div>
+                    <div class="text-sm text-gray-600">Denia &amp; Costa Blanca North</div>
                 </div>
             </div>
         </div>
@@ -638,7 +697,7 @@
                         Professional property management services in Denia and Costa Blanca North. Key holding, maintenance, and airport transfers for homeowners and real estate agents.
                     </p>
 
-                    <!-- SOCIAL ICONS — inline SVG because Lucide v1 removed brand icons -->
+                    <!-- Social links — inline SVG, because Lucide v1 removed all brand icons -->
                     <div class="flex gap-4">
                         <a href="https://www.facebook.com/profile.php?id=61594640412435" target="_blank" rel="noopener noreferrer" aria-label="Denia Property Care on Facebook" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -663,7 +722,7 @@
                 <div>
                     <h4 class="font-semibold text-lg mb-4">Get in Touch</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="tel:+34711089008" class="hover:text-white transition-colors">711 089 008</a></li>
+                        <li><a href="tel:+34711089008" class="hover:text-white transition-colors">+34 711 089 008</a></li>
                         <li><a href="mailto:info@deniapropertycare.com" class="hover:text-white transition-colors">info@deniapropertycare.com</a></li>
                         <li>Denia &amp; Costa Blanca North</li>
                     </ul>
@@ -681,37 +740,15 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/34711089008" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 z-50 group">
+    <a href="https://wa.me/34711089008" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 z-50 group" aria-label="Chat on WhatsApp">
         <i data-lucide="message-circle" class="h-7 w-7"></i>
         <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
             Chat with us
         </span>
     </a>
 
+    <!-- All behaviour lives in script.js: mobile menu, smooth scroll,
+         scrollToContact(), form return URL, success message, animations -->
     <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-
-        // Pre-select a service then scroll to the contact form
-        function scrollToContact(service) {
-            var select = document.getElementById('service-select');
-            if (select && service) {
-                for (var i = 0; i < select.options.length; i++) {
-                    if (select.options[i].value === service) { select.selectedIndex = i; break; }
-                }
-            }
-            var contact = document.getElementById('contact');
-            if (contact) contact.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Mobile menu toggle
-        var menuBtn = document.getElementById('mobile-menu-btn');
-        var mobileMenu = document.getElementById('mobile-menu');
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-    </script>
 </body>
 </html>
